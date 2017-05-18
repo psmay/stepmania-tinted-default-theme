@@ -17,7 +17,7 @@ return Def.ActorFrame {
 			self:shadowlength(1):skewx(-0.125):x(label_text:GetZoomedWidth()+8)
 			if GetTimingDifficulty() == 9 then
 				self:settext(Screen.String("Hardest Timing"));
-				(cmd(zoom,0.5;diffuse,ColorLightTone( Color("Orange")) ))(self);
+				(cmd(zoom,0.5;diffuse,ColorLightTone( ColorSchemeColors.VeryShallow) ))(self);
 			else
 				self:settext( GetTimingDifficulty() );
 			end

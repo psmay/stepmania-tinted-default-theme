@@ -9,10 +9,10 @@ t[#t+1] = Def.ActorFrame {
 		ActorUtil.LoadAllCommandsAndSetXY(self,Var "LoadingScreen")
 	end;
 	LoadActor(THEME:GetPathG("OptionRowExit","Frame")) .. {
-		InitCommand=cmd(diffuse,Color("Orange");diffusealpha,0.35);
+		InitCommand=cmd(diffuse,ColorSchemeColors.VeryShallow;diffusealpha,0.35);
 	};
 	LoadFont("Common Normal") .. {
-		InitCommand=cmd(zoom,0.75;shadowlength,1;glowshift;strokecolor,Color("Outline");diffuse,Color("Orange");diffusetopedge,Color("Yellow");textglowmode,'TextGlowMode_Inner');
+		InitCommand=cmd(zoom,0.75;shadowlength,1;glowshift;strokecolor,Color("Outline");diffuse,ColorSchemeColors.VeryShallow;diffusetopedge,ColorSchemeColors.VeryDeep;textglowmode,'TextGlowMode_Inner');
 		Text="...";
 		OnCommand=cmd(playcommand,"Refresh");
 		CoinInsertedMessageCommand=cmd(playcommand,"Refresh");

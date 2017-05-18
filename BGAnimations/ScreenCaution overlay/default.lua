@@ -14,11 +14,11 @@ t[#t+1] = Def.ActorFrame {
 	InitCommand=cmd(Center);
 	OnCommand=cmd(diffusealpha,0.5);
 	LoadActor("_warning bg") .. {
-		OnCommand=cmd(diffuse,Color.Yellow);
+		OnCommand=cmd(diffuse,ColorSchemeColors.VeryDeep);
 	};
 	Def.ActorFrame {
 		LoadActor("_exclamation") .. {
-			OnCommand=cmd(diffuse,Color.Yellow);
+			OnCommand=cmd(diffuse,ColorSchemeColors.VeryDeep);
 		};
 	};
 };
@@ -30,11 +30,11 @@ t[#t+1] = Def.ActorFrame {
 	-- Underline
 	Def.Quad {
 		InitCommand=cmd(y,24;zoomto,256,2);
-		OnCommand=cmd(diffuse,color("#ffd400");shadowcolor,BoostColor(color("#ffd40077"),0.25);linear,0.25;zoomtowidth,256;fadeleft,0.25;faderight,0.25);
+		OnCommand=cmd(diffuse,ColorSchemeColors.Deep;shadowcolor,BoostColor(ColorSchemeColors.DeepSemiAlpha,0.25);linear,0.25;zoomtowidth,256;fadeleft,0.25;faderight,0.25);
 	};
 	LoadFont("Common Large") .. {
 		Text=Screen.String("Caution");
-		OnCommand=cmd(skewx,-0.125;diffuse,color("#ffd400");strokecolor,ColorDarkTone(color("#ffd400")));
+		OnCommand=cmd(skewx,-0.125;diffuse,ColorSchemeColors.Deep;strokecolor,ColorDarkTone(ColorSchemeColors.Deep));
 	};
 	LoadFont("Common Normal") .. {
 		Text=Screen.String("CautionText");

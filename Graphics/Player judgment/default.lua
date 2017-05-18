@@ -140,7 +140,7 @@ local frame = Def.ActorFrame {
 		Name="ProtimingGraphAverage";
 		InitCommand=cmd(visible,false;y,32;zoomto,2,7;);
 		ResetCommand=cmd(finishtweening;diffusealpha,0.85;visible,false);
-		OnCommand=cmd(diffuse,Color("Orange");diffusealpha,0.85);
+		OnCommand=cmd(diffuse,ColorSchemeColors.VeryShallow;diffusealpha,0.85);
 	};
 	Def.Quad {
 		Name="ProtimingGraphCenter";

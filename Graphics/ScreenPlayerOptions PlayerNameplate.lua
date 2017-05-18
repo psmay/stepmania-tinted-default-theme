@@ -52,7 +52,7 @@ local t = Def.ActorFrame {
 			self:playcommand("ConfigValueChanged", {pn= PlayerNumber, field_name= "speed_mod"})
 		end,
 		BPMWillNotChangeCommand=cmd(stopeffect),
-		BPMWillChangeCommand=cmd(diffuseshift;effectcolor1,Color.White;effectcolor2,Color.Orange),
+		BPMWillChangeCommand=cmd(diffuseshift;effectcolor1,Color.White;effectcolor2,ColorSchemeColors.VeryShallow),
 		ConfigValueChangedMessageCommand= function(self, param)
 			if param.field_name == "speed_mod" or param.field_name == "speed_type" then
 				local prefs= notefield_prefs_config:get_data(param.pn)

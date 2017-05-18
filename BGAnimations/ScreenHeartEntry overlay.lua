@@ -136,13 +136,13 @@ local args= {
 	};
 	Def.Quad {
 		InitCommand=cmd(xy, SCREEN_CENTER_X, SCREEN_CENTER_Y-100;zoomto,2,2);
-		OnCommand=cmd(diffuse,color("#ffd400");shadowcolor,BoostColor(color("#ffd40077"),0.25);linear,0.25;zoomtowidth,420;fadeleft,0.25;faderight,0.25);
+		OnCommand=cmd(diffuse,ColorSchemeColors.Deep;shadowcolor,BoostColor(ColorSchemeColors.DeepSemiAlpha,0.25);linear,0.25;zoomtowidth,420;fadeleft,0.25;faderight,0.25);
 	};
 	Def.BitmapText {
 		Name= "explanation", Font= "Common Large",
 		Text= string.upper(THEME:GetString("ScreenHeartEntry", "Enter Heart Rate")),
 		InitCommand= cmd(xy, SCREEN_CENTER_X, SCREEN_CENTER_Y-128; diffuse, Color.White),
-		OnCommand=cmd(skewx,-0.125;diffuse,color("#ffd400");strokecolor,ColorDarkTone(color("#ffd400")))}
+		OnCommand=cmd(skewx,-0.125;diffuse,ColorSchemeColors.Deep;strokecolor,ColorDarkTone(ColorSchemeColors.Deep))}
 	,
 
 	Def.BitmapText{
