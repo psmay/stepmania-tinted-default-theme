@@ -55,7 +55,7 @@ local TNSFrames = {
 
 --different language support
 local lang = THEME:GetCurLanguage()
-local g_path = "/Themes/default/Graphics/"
+local g_path = themeInfo.RootDir .. "/Graphics/"
 local judgment_file = g_path.."Judgment Normal 1x6"
 
 if lang ~= "en" and FILEMAN:DoesFileExist(judgment_file.." (lang "..lang..").png") then

@@ -28,7 +28,7 @@ else
 end
 
 local lang = THEME:GetCurLanguage()
-local g_path = "/Themes/default/Graphics/"
+local g_path = themeInfo.RootDir .. "/Graphics/"
 local stage_num_actor= g_path.."ScreenStageInformation stage "..ToEnumShortString(sStage)
 
 if lang ~= "en" and FILEMAN:DoesFileExist(stage_num_actor.." (lang "..lang..").png") then

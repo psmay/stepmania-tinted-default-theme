@@ -1,6 +1,7 @@
 -- theme identification:
 themeInfo = {
-	ProductCode = "SSC-501",
-	Name = "StepMania 5 Default",
-	Date = "20120108",
+	ProductCode = "HGK-TintedDefault",
+	Name = "StepMania 5 Tinted Default",
+	Date = "20170518",
+	RootDir = "/Themes/stepmania-tinted-default-theme",
 }

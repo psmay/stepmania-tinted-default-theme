@@ -4,7 +4,7 @@ if IsNetSMOnline() then
 end
 
 local lang = THEME:GetCurLanguage()
-local cur_dir = "/Themes/default/BGAnimations/ScreenGameplay go/"
+local cur_dir = themeInfo.RootDir .. "/BGAnimations/ScreenGameplay go/"
 if lang ~= "en" and FILEMAN:DoesFileExist(cur_dir.."go (lang "..lang..").png") then
 	return LoadActor("go (lang "..lang..")") .. {
 		InitCommand=cmd(Center;draworder,105);

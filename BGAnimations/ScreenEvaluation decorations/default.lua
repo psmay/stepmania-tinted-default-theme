@@ -232,7 +232,7 @@ t[#t+1] = StandardDecorationFromFileOptional("TimingDifficulty","TimingDifficult
 t[#t+1] = StandardDecorationFromFileOptional("GameType","GameType");
 
 local lang = THEME:GetCurLanguage()
-local g_path = "/Themes/default/Graphics/"
+local g_path = themeInfo.RootDir .. "/Graphics/"
 local extra1 = g_path.."ScreenStageInformation Stage extra1"
 local extra2 = g_path.."ScreenStageInformation Stage extra2"
 

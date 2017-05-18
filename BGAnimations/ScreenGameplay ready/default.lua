@@ -4,7 +4,7 @@ if IsNetSMOnline() then
 end
 
 local lang = THEME:GetCurLanguage()
-local cur_dir = "/Themes/default/BGAnimations/ScreenGameplay ready/"
+local cur_dir = themeInfo.RootDir .. "/BGAnimations/ScreenGameplay ready/"
 if lang ~= "en" and FILEMAN:DoesFileExist(cur_dir.."ready (lang "..lang..").png") then
 	return LoadActor("ready (lang "..lang..")") .. {
 		InitCommand=cmd(Center;draworder,105);
